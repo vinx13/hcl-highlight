@@ -1,2 +1,2 @@
 ## HCL-Highlight
-Syntax highlighting for HCL (Hardware Control Language)
+Atom package for syntax highlighting for HCL (Hardware Control Language)
