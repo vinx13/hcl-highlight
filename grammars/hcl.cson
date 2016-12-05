@@ -1,0 +1,41 @@
+'scopeName': 'source.hcl'
+'name': 'hcl'
+'fileTypes': ['hcl']
+'patterns': [
+  {
+    'match': '#[^\\n]*$'
+    'name': 'comment.hcl'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'string.hcl'
+    'match': '\\\'([^\\n]*)\\\''
+    'name': 'string.hcl'
+  }
+  {
+    'match': '\\b(intsig|boolsig)\\b\\s+\\b(\\w+)\\b'
+    'captures':
+      '1':
+        'name': 'keyword.hcl'
+      '2':
+        'name': 'constant.hcl'
+    'name': 'signal.hcl'
+  }
+  {
+    'match': '\\b(int|bool)\\b\\s+\\b(\\w+)\\b'
+    'captures':
+      '1':
+        'name': 'keyword.hcl'
+      '2':
+        'name': 'variable.hcl.'
+  }
+  {
+    'match': '\\b(quote|in)\\b'
+    'name': 'keyword.hcl'
+  }
+  {
+    'match': '(=|==|\\:|\\(|\\)|\\[|\\])'
+    'name': 'meta.separator.hcl'
+  }
+]
