@@ -7,10 +7,7 @@
     'name': 'comment.hcl'
   }
   {
-    'captures':
-      '1':
-        'name': 'string.hcl'
-    'match': '\\\'([^\\n]*)\\\''
+    'match': '\\\'[^\\n]*\\\''
     'name': 'string.hcl'
   }
   {
@@ -28,7 +25,7 @@
       '1':
         'name': 'keyword.hcl'
       '2':
-        'name': 'variable.hcl.'
+        'name': 'variable.hcl'
   }
   {
     'match': '\\b(quote|in)\\b'
